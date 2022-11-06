@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset=" utf-8">
+ <meta name= "viewport" content="width=device-width, initial-scale=1">
+ 
+<title>Responsive About Us Page</title>
+ <link rel=" stylesheet" type= "text/css" href="css/style.css">
+<link rel="preconnect" href= "https: / /fonts.googleapis. com">
+ <link rel=" preconnect" href= "https://fonts.gstatic. com" crossorigin>
+ <link href= "https://fonts. googleapis. .com/css2?family=Josefin+Sans:ital, wght@0, 100;0, 200;0, 300;0,400
+ ;0, 500;0, 600;0, 700;1, 100;1, 200;1, 300;1, 400;1, 500;1, 600;1, 700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="ABOUT.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Color</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <div class="ah">
+      
+    </div>
+   
+<section class="about">
+  <p><h1 class="ara">أنا شاب مغربي الجنسية متأثر بالثقافة الإسلامية. قمت بإنشاء هذا الموقع لتسهيل الأمور عل المسلمين في مختلف بلدان العالم لإجاد بيت من بيوت الله لأداء واجبه الديني.</h1></p>
+  <P><h1 class="ang">I'm a young morrocan teenager who's influenced by the Islamic education and culture. I created this website to help Muslims in different countries to find a mosque easily so that they can perform their religious duties.</h1></P>
+  
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-home-heart'></i>
+          <div class="logo_name">ALLAH Houses</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+     
+      <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+           <input type="text" placeholder="Search...">
+           <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="Home.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+           <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+         <a href="About me.html">
+           <i class='bx bx-user' ></i>
+           <span class="links_name">About me</span>
+         </a>
+         <span class="tooltip">About me</span>
+       </li>
+       <li>
+         <a href="#">
+           <i class='bx bx-chat' ></i>
+           <span class="links_name">Contact</span>
+         </a>
+         <span class="tooltip">Contact</span>
+       </li>
+       <li>
+         <a href="#">
+           <i class='bx bx-pie-chart-alt-2' ></i>
+           <span class="links_name">Analytics</span>
+         </a>
+         <span class="tooltip">Analytics</span>
+       </li>
+       <li>
+         <a href="#">
+          <i class='bx bx-group'></i>
+           <span class="links_name">About</span>
+         </a>
+         <span class="tooltip">About</span>
+       </li>
+       
+       <li>
+         <a href="#">
+           <i class='bx bx-heart' ></i>
+           <span class="links_name">Saved</span>
+         </a>
+         <span class="tooltip">Saved</span>
+       </li>
+       <li>
+         
+       
+      </ul>
+    </div>
+    
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+  
+    </script>
+  
+ </section>
+</body>
+</html>

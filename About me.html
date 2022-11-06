@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset=" utf-8">
+ <meta name= "viewport" content="width=device-width, initial-scale=1">
+ 
+<title>Responsive About Us Page</title>
+ <link rel=" stylesheet" type= "text/css" href="css/style.css">
+<link rel="preconnect" href= "https: / /fonts.googleapis. com">
+ <link rel=" preconnect" href= "https://fonts.gstatic. com" crossorigin>
+ <link href= "https://fonts. googleapis. .com/css2?family=Josefin+Sans:ital, wght@0, 100;0, 200;0, 300;0,400
+ ;0, 500;0, 600;0, 700;1, 100;1, 200;1, 300;1, 400;1, 500;1, 600;1, 700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="ABOUT me.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+   </head>
+   <body>
+ <section class="about">
+  <div class="content">
+    <img src="1.png" alt="">
+    <div class="text">
+      <h1>About me</h1>
+      <h5>Game/Web Developer</h5>
+      <p>My name is Mohammed amine a 17 years old teenager from morroco. I'm very attached to everything related to computer science since I was a kid which prompted and helped me to learn programming and its basics . I started game development using the C# language then the web development using Javascript which enumerates the basics. Now I'm in a training course on artificial intelligence to increase and improve my knowledge within this field.I reached all of this because of my love and passion to create my own project that can be useful to others</p>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/aminetuber.aminetuber" class="fb"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@drkwin1?_t=8WMn1kSp4BZ&_r=1" class="twitter"><i class="fab fa-tiktok"></i></a>
+      <a href="https://instagram.com/drkwin.exe?igshid=ZjA0NjI3M2I=" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UC5DiKN-dMREmwjTbiV3PLqg" class="yt"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-home-heart'></i>
+          <div class="logo_name">ALLAH Houses</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+     
+      <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+           <input type="text" placeholder="Search...">
+           <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="Home.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+           <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+         <a href="About me.html">
+           <i class='bx bx-user' ></i>
+           <span class="links_name">About me</span>
+         </a>
+         <span class="tooltip">About me</span>
+       </li>
+       <li>
+         <a href="#">
+           <i class='bx bx-chat' ></i>
+           <span class="links_name">Contact</span>
+         </a>
+         <span class="tooltip">Contact</span>
+       </li>
+       <li>
+         <a href="#">
+           <i class='bx bx-pie-chart-alt-2' ></i>
+           <span class="links_name">Analytics</span>
+         </a>
+         <span class="tooltip">Analytics</span>
+       </li>
+       <li>
+         <a href="ABOUT.html">
+          <i class='bx bx-group'></i>
+           <span class="links_name">About</span>
+         </a>
+         <span class="tooltip">About</span>
+       </li>
+       
+       <li>
+         <a href="#">
+           <i class='bx bx-heart' ></i>
+           <span class="links_name">Saved</span>
+         </a>
+         <span class="tooltip">Saved</span>
+       </li>
+       <li>
+         
+       
+      </ul>
+    </div>
+    
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+  
+    </script>
+  
+ </section>
+ 
+
+  
+</body>
+
+  
+   </html>
